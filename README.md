@@ -1,27 +1,24 @@
-# Fit Journey PWA
+# Fit Journey 2.0 — Alpha 1
 
-Aplicación web progresiva original para iPhone, inspirada en patrones generales de apps de entrenamiento, sin copiar marca, diseño, textos ni contenido propietario de Freeletics.
+Base moderna en Next.js + TypeScript, orientada primero a que el entrenamiento sea funcional para:
+- personas que nunca han entrenado;
+- personas que entrenan habitualmente.
 
-## Incluye
-- Programa de 4 días en gimnasio + sesión opcional de kettlebells.
-- Biblioteca de ejercicios bilingüe con músculos, técnica, series, repeticiones, descansos, cargas iniciales y enlaces.
-- Registro de cargas/repeticiones por serie.
-- Cronómetro de descanso.
-- Fases de 52 semanas.
-- Nutrición y cálculo de macros.
-- Medidas y exportación de respaldo.
-- Uso sin conexión después de la primera carga.
+## Funciones incluidas
+- Onboarding por nivel.
+- Programa semanal diferente para principiante y usuario habitual.
+- Entrenamiento por series con peso, repeticiones y guardado local.
+- Cronómetro automático al completar cada serie.
+- Aviso sonoro doble cuando faltan 10 segundos.
+- Alarma de tres tonos y vibración al terminar.
+- Biblioteca técnica de todos los ejercicios usados en las sesiones.
+- Preparación, ejecución, errores, respiración, tempo, progresión, alternativas y videos.
+- Seguimiento de peso y cintura.
+- Respaldo descargable.
+- PWA instalable y uso básico offline.
 
-## Cómo probar en computadora
-Ejecutar un servidor local dentro de esta carpeta:
-`python -m http.server 8000`
-y abrir `http://localhost:8000`.
+## Publicación en Vercel
+Este repositorio se despliega automáticamente cuando los archivos se cargan a la rama `main`.
 
-## Cómo instalar en iPhone
-Una PWA debe estar alojada en HTTPS. Sube esta carpeta a GitHub Pages, Netlify, Vercel o un hosting equivalente. Después:
-1. Abre la URL en Safari.
-2. Toca Compartir.
-3. Toca “Agregar a pantalla de inicio”.
-4. Abre Fit Journey desde el ícono.
-
-Abrir directamente index.html desde Archivos no habilita correctamente el service worker ni la instalación completa.
+## Nota
+Durante Alpha 1 los datos se guardan en el dispositivo mediante localStorage. La sincronización gratuita con Supabase se incorporará después de validar el flujo principal de entrenamiento.
